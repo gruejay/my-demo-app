@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/demo-app')
+@app.route('/')
 def hello():
     current_env = os.getenv("FLASK_ENV")
     return f"Hello, {current_env}!"
