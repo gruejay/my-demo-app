@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/demo-app')
 def hello():
-    current_env = os.env.get("FLASK_ENV")
+    current_env = os.getenv("FLASK_ENV")
     return f"Hello, {current_env}!"
 
 if __name__ == '__main__':
